@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 100px 0px 10px;
+}
+
+/* Cabeçalho */
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: #fff;
+}
+
+nav {
+  box-shadow: 3px -6px 25px 3px #2a2a2a1e;
+  padding: 18px 4px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+nav ul a {
+  padding: 3px 6px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+  color: #0000ee;
+}
+
+nav ul a:hover {
+  box-shadow: 0px 1px 6px 3px #58585815;
+}
+
+.color-blue {
+  color: #0000ee;
+}
+
+/* Sessão de apresentação */
+main {
+  margin-bottom: 80px;
+}
+
+.sobre-mim {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  width: 95%;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  color: #3c3c3c;
+}
+
+.sobre-mim img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.sobre-mim h1 {
+  margin-bottom: 20px;
+}
+
+.sobre-mim p {
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.sobre-mim h3 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.sobre-mim .habilidades {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 30px;
+  padding: 10px;
+}
+
+/* Rodapé */
+footer {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 10px;
+  color: #3c3c3c;
+}
+
+footer .author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 14px;
+}
+
+footer .author img {
+  border-radius: 50%;
+  width: 80px;
+}
+
+footer .contatos-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  border: 1px solid #3c3c3c53;
+  border-radius: 100px;
+  padding: 10px;
+}
+
+footer .contatos ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+footer .contatos ul a {
+  color: #0000ee;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+footer .contatos ul a:hover {
+  transform: scale(1.08);
+}
+
+/* Responsividade */
+@media (max-width: 450px) {
+  .sobre-mim p {
+    text-align: left;
+    padding: 10px;
+  }
+
+  footer .contatos-content {
+    border: none;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 250px) {
+  .sobre-mim img {
+    width: 80px;
+  }
+}
