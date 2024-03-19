@@ -1,9 +1,24 @@
 const allImgsCar = document.querySelectorAll(".carro");
 const buttonNext = document.querySelector(".next");
 const buttonPrev = document.querySelector(".prev");
+const closeModal = document.querySelector(".close-modal")
+const modal = document.querySelector("#modal")
+const transparentBlack = document.querySelector(".transparent-black")
+
 let current = 0;
 
 allImgsCar.forEach((carro, index) => {
+
+  carro.addEventListener("click", () => {
+    transparentBlack.classList.remove("hide")
+
+    modal.style.background = `url(img/car_${
+      index + 1
+    }.jpg) no-repeat center center`;
+    modal.style.backgroundSize = "cover";
+    modal.showModal()
+  })
+
   carro.style.background = `url(img/car_${
     index + 1
   }.jpg) no-repeat center center`;
@@ -25,6 +40,11 @@ buttonPrev.addEventListener("click", () => {
 
   setImgShowFn();
 });
+
+closeModal.addEventListener("click", () => {
+  transparentBlack.classList.add("hide")
+  modal.close()
+})
 
 const setImgShowFn = () => {
   allImgsCar.forEach((carro) => {

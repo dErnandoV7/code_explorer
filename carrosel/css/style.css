@@ -9,9 +9,39 @@
   --color-primary: #ffd700;
 }
 
+.hide {
+  display: none;
+}
+
 body {
+  position: relative;
   background: #262626;
   color: #dedede;
+}
+
+.transparent-black {
+  height: 100vh;
+  width: 100vw;
+  background: #0000009f;
+  position: absolute;
+  z-index: 2;
+}
+
+#modal {
+  margin: auto;
+  border: none;
+  outline: none;
+  width: 90%;
+  max-width: 800px;
+  height: 400px;
+}
+
+#modal span {
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
 }
 
 .container {
