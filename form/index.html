@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form para contato</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Varela Round -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JavaScript -->
+    <script src="EmailValidation.js" defer></script>
+  </head>
+  <body>
+    <div class="email-error">Este email não é válido!</div>
+    <div class="main-container">
+      <img src="img/icon-code.png" alt="Code" />
+
+      <form>
+        <div class="input-group">
+          <label for="name">Nome:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Insira seu nome"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Insira seu email"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="subject">Assunto:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Assunto da mensagem"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="messege">Mensagem:</label>
+          <textarea name="messege" id="messege" required></textarea>
+        </div>
+        <button>Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>

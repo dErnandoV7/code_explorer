@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+
+.main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 14px;
+  min-height: 100vh;
+  background: #350235;
+}
+
+.email-error {
+  position: absolute;
+  transform: translateX(-200%);
+  top: 20px;
+  left: 10px;
+  z-index: 1;
+  background: #ff000060;
+  color: red;
+  padding: 6px 10px;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.main-container img {
+  width: 140px;
+  border-radius: 50%;
+  border: 2px solid #666666;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 95%;
+  max-width: 450px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.input-group label {
+  color: #a6a6a6;
+  font-weight: bold;
+}
+
+.input-group input,
+textarea {
+  width: 100%;
+  background: transparent;
+  padding: 8px 8px 8px;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #9f9e9e;
+  resize: none;
+  outline: none;
+}
+
+.input-group:last-of-type {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-group textarea {
+  height: 90px;
+  padding: 10px;
+  color: #fff;
+  border: 1px solid #a8a7a789;
+  border-radius: 10px;
+}
+
+form button {
+  width: max-content;
+  margin: auto;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #fff;
+  color: #350235;
+}
